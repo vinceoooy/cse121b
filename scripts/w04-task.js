@@ -17,7 +17,14 @@ let myProfile = {
 myProfile.placeLived.push(
     {
         place: 'Butuan City, Philippines', 
-        length: '23 years', 
+        length: '20 years', 
+    }
+)
+
+myProfile.placeLived.push(
+    {
+        place: 'Cebu City, Philippines', 
+        length: '3 years', 
     }
 )
 
@@ -27,7 +34,6 @@ myProfile.placeLived.push(
         length: '2 years', 
     }
 )
-
 
 /* DOM Manipulation - Output */
 /* Name */
