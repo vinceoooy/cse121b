@@ -3,7 +3,7 @@
 /* Profile Object  */
 let myProfile = {
     name: "Casey Vince Tan Pag-ong",
-    mePhoto: "images/me.jpg",
+    photo: "images/me.jpg",
     favoriteFoods: ['Adobo', 'Sinigang', 'Tinola', 'Paksiw', 'Caldereta'],
     hobbies: ['Playing piano', 'Computer games', 'Riding my bike'],
     placeLived:[],
@@ -41,7 +41,8 @@ document.querySelector("#name").textContent = myProfile.name;
 
 
 /* Photo with attributes */
-document.querySelector("#photo").src = myProfile.mePhoto;
+document.querySelector("#photo").src = myProfile.photo;
+document.querySelector("#photo").alt = myProfile.name;
 
 
 /* Favorite Foods List*/
