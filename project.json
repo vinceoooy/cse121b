@@ -1,14 +1,10 @@
-{
-    "loanParameters": {
-      "loanAmount": 10000,
-      "interestRate": 5,
-      "loanTerm": 5
-    },
-    "savingsParameters": {
-      "initialDeposit": 5000,
-      "monthlyDeposit": 200,
-      "interestRate": 3,
-      "savingsTerm": 10
-    }
+[
+  {
+    "functionName": "loan",
+    "imageUrl": "https://raw.githubusercontent.com/vinceoooy/cse121b/master/images/loan.jpg"
+  },
+  {
+    "functionName": "savings",
+    "imageUrl": "https://raw.githubusercontent.com/vinceoooy/cse121b/master/images/savings.jpg"
   }
-  
+]
