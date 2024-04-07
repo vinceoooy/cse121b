@@ -1,0 +1,202 @@
+/* Basic CSS for styling */
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+}
+
+button#loanButton {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button#savingsButton {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.1); /* Darken button on hover */
+}
+
+.result {
+    margin-top: 20px;
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+nav ul li:first-child {
+    display: block;
+    font-size: 2rem;
+}
+
+nav ul li:first-child a {
+    padding: 1px 10px;
+}
+
+nav ul li {
+    display: none;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+}
+
+nav ul li a:hover {
+    background-color: #efefef;
+    color: black;
+}
+
+/* Class Selectors */
+.active {
+    border-bottom: 1px solid yellow;
+}
+
+.open li {
+    display: block;
+}
+
+.block {
+    display: block;
+}
+
+.larger {
+    font-size: larger;
+    color: red;
+}
+
+.right {
+    width: 100%;
+    text-align: right;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    gap: 1rem;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    section {
+        min-width: 300px;
+    }
+
+    #home {
+        margin: 100px auto 20px;
+        grid-template-columns: 250px 1fr;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+    }
+
+    #task3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin: 0 auto;
+        max-width: 950px;
+    }
+}
+
+.buttons-container img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 50px;
+    width: 400px; 
+    height: auto;
+    margin: 20px; 
+    transition: transform 0.7s;
+    box-shadow: 5px 5px 10px #6f7364;
+  }
+
+.buttons-container img:hover {
+    cursor: pointer;
+    width: 405px;
+    opacity: .6;
+    transform: scale(1.07);
+}
+
+
+.calculator-box {
+    max-width: 400px; 
+    height: 475px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bdbdbd;
+    border: 5px solid #000000;
+    border-radius: 5px;
+}
+
+
+

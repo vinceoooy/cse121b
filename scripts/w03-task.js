@@ -94,3 +94,26 @@ document.querySelector('#multiplied').textContent = numbersArray
 document.querySelector('#sumOfMultiplied').textContent = numbersArray
 .map(number => number * 2)
 .reduce((sum, number) => sum + number); 
+
+fetch('project.json')
+  .then(response => response.json())
+  .then(data => {
+    const loanAmountInput = document.getElementById('loanAmount');
+    loanAmountInput.value = data.loanParameters.loanAmount;
+
+    const loanInterestRateInput = document.getElementById('loanInterestRate');
+    loanInterestRateInput.value = data.loanParameters.interestRate;
+
+    const initialDepositInput = document.getElementById('initialDeposit');
+    initialDepositInput.value = data.savingsParameters.initialDeposit;
+
+    const monthlyDepositInput = document.getElementById('monthlyDeposit');
+    monthlyDepositInput.value = data.savingsParameters.monthlyDeposit;
+
+    const savingsInterestRateInput = document.getElementById('savingsInterestRate');
+    savingsInterestRateInput.value = data.savingsParameters.interestRate;
+
+    const savingsTermInput = document.getElementById('savingsTerm');
+    savingsTermInput.value = data.savingsParameters.savingsTerm;
+  })
+  .catch(error => console.error('Error fetching data:', error));

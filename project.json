@@ -1,0 +1,14 @@
+{
+    "loanParameters": {
+      "loanAmount": 10000,
+      "interestRate": 5,
+      "loanTerm": 5
+    },
+    "savingsParameters": {
+      "initialDeposit": 5000,
+      "monthlyDeposit": 200,
+      "interestRate": 3,
+      "savingsTerm": 10
+    }
+  }
+  
