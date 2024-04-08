@@ -187,16 +187,37 @@ nav ul li a:hover {
     transform: scale(1.07);
 }
 
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
 
 .calculator-box {
     max-width: 400px; 
-    height: 475px; 
+    height: 575px; 
     margin: 0 auto;
+    margin-left: 50px;
     padding: 20px;
     background-color: #bdbdbd;
     border: 5px solid #000000;
     border-radius: 5px;
+    float: left;
+    width:40%;
 }
-
+.chart-container {
+    height: 575px; 
+    margin:0 auto;
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    float: left;
+    width: 50%;
+    width: 700px;   
+    height: 600px
+}
 
 

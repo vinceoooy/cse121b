@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/project.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/project.js"></script>
 </head>
 
 <body>
@@ -25,11 +27,7 @@
   </nav>
   <h1>Finance Tracker: Loan and Savings Calculator</h1>
 
-  <div class="buttons-container middle"> <!-- Added middle class -->
-    <img src="images/loan.jpg" alt="Loans" onclick="showLoanForm()">
-    <img src="images/savings.jpg" alt="Savings" onclick="showSavingsForm()">
-  </div>  
-
+  <div class="buttons-container middle"> </div>  
   <!-- Loan Calculator Form -->
   <div id="loanForm" class="calculator-box" style="display: none;">
     <button onclick="goBack()">Back</button>
@@ -42,7 +40,6 @@
     <input type="number" id="loanTerm" min="0" required>
     <button onclick="calculateLoan()">Calculate Loan</button>
     <div id="loanResult" class="result"></div>
-    <canvas id="loanChart" width="400" height="200"></canvas>
   </div>
 
   <!-- Savings Calculator Form -->
@@ -59,34 +56,14 @@
     <input type="number" id="savingsTerm" min="0" required>
     <button onclick="calculateSavings()">Calculate Savings</button>
     <div id="savingsResult" class="result"></div>
-    <canvas id="savingsChart" width="400" height="200"></canvas>
   </div>
 
-  <script>
-    function showLoanForm() {
-      document.querySelector('.buttons-container').style.display = 'none'; // Hide buttons
-      document.getElementById('loanForm').style.display = 'block'; // Show loan form
-    }
-
-    function showSavingsForm() {
-      document.querySelector('.buttons-container').style.display = 'none'; // Hide buttons
-      document.getElementById('savingsForm').style.display = 'block'; // Show savings form
-    }
-
-    function goBack() {
-      document.querySelector('.buttons-container').style.display = 'flex'; // Show buttons
-      document.getElementById('loanForm').style.display = 'none'; // Hide loan form
-      document.getElementById('savingsForm').style.display = 'none'; // Hide savings form
-    }
-
-    function calculateLoan() {
-      // Loan calculation code
-    }
-
-    function calculateSavings() {
-      // Savings calculation code
-    }
-  </script>
+  <div class="chart-container">
+    <canvas id="loanChart"></canvas>
+    <canvas id="savingsChart"></canvas>
+    </div>
+  
+  
 </body>
 
 </html>
