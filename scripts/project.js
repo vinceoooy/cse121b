@@ -108,7 +108,6 @@ function generateLoanChart() {
         data.datasets[0].data.push(balance.toFixed(2)); // Round to 2 decimal places and push to data array
     }
   
-    // Options for the chart
     const options = {
         scales: {
             y: {
@@ -167,7 +166,6 @@ function calculateSavings() {
 
 
 function generateSavingsChart() {
-  // Retrieve data for the chart
   const initialDeposit = parseFloat(document.getElementById('initialDeposit').value);
   const monthlyDeposit = parseFloat(document.getElementById('monthlyDeposit').value);
   const interestRate = parseFloat(document.getElementById('savingsInterestRate').value) / 100; // Convert interest rate to decimal
